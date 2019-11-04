@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+    perspective: 600px;
+}
+
+header {
+    background-color: orange;
+    height: 740px;
+    width: 100%;
+}
+
+ /* .guida {
+    background-image: url(Images/GUIDA.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 78%;
+    height: 48%;
+    margin-top: 190px;
+    position: absolute;
+} */
+
+.innerimage img {
+    width: 100%;
+}
+
+.sept {
+    /* background-color: pink; */
+    height: 150px;
+    width: 285px;
+    /* border: 1px solid red; */
+    display: inline-block;
+    position: absolute;
+    perspective: 600px;
+}
+
+/* frecce: prima quella su e poi quella giu' */
+.sept1 {
+    left: 223px;
+    top: 100px;
+    transform: translate3d(0,90px,0);
+    transition: ease 2s;
+    transition-delay: 0.3s;
+}
+
+.sept2 {
+    left: 234PX;
+    top: 480px;
+    transform: translate3d(0,-86px,0);
+    transition: ease 2s;
+    transition-delay: 2s
+}
+
+
+/* frecce laterali, prima quella sinistra poi quella destra */
+.eight {
+    height: 240px;
+    width: 146px;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    position: absolute;
+}
+
+.eight1 {
+    left: 120px;
+    top: 268px;
+    transform: translate3d(77px,0,0);
+    transition: ease 2s;
+    transition-delay: 2s
+}
+
+.eight2 {
+    left: -200px;
+    top: 280px;
+    transform: translate3d(664px,0,0);
+    transition: ease 2s;
+    transition-delay: 12.5s;
+}
+
+.fifty {
+    /* background-color: lightgreen; */
+    height: 200px;
+    width: 122px;
+    /* border: 1px solid green; */
+    display: inline-block;
+    position: absolute;
+}
+
+/* 0 */
+.fifty1 {
+    left: 287px;
+    top: 268px;
+    transform: rotateX(360deg);
+    transition: ease 1s;
+    transition-delay: 1.5s;
+    transition-duration: 0.5s;
+}
+
+/* 1 */
+.fifty2 {
+    left: 147.5px;
+    top: 272px;
+    transform: rotateX();
+    transition: ease 3s;
+    transition-delay:;
+    position: relative;
+    animation-name: example0;
+    animation-duration: 4s;
+}
+
+/* B */
+.fifty3 {
+    left: 264px;
+    top: 268px;
+    position: relative;
+    animation-name: example1;
+    animation-duration: 8s;
+    animation-delay: 4.6s ;
+}
+
+/* O */
+.fifty4 {
+    left: 262px;
+    top: 268px;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 11s;
+    animation-delay: 2.3s;
+}
+
+/* O */
+.fifty5 {
+    left: 261px;
+    top: 268px;
+    position: relative;
+    animation-name: example3;
+    animation-duration: 8s;
+    animation-delay: 4.6s ;
+}
+
+/* L */
+.fifty6 {
+    left: 196.5px;
+    top: 268px;
+    transition: ease 3s;
+    position: relative;
+    animation-name: example4;
+    animation-duration: 8s;
+    animation-delay: 4.6s ;
+}
+
+/* E */
+.fifty7 {
+    left: 188px;
+    top: 268px;
+    position: relative;
+    animation-name: example5;
+    animation-duration: 8s;
+    animation-delay: 4.6s;
+}
+
+/* A */
+.fifty8 {
+    left: 176px;
+    top: 268px;
+    position: relative;
+    animation-name: example6;
+    animation-duration: 8s;
+    animation-delay: 4.6s ;
+}
+
+/* N */
+.fifty9 {
+    left: 195px;
+    top: 268px;
+    position: relative;
+    animation-name: example7;
+    animation-duration: 8s;
+    animation-delay: 4.6s;
+}
+
+.text-container {
+    position: relative;
+    left: 650px;
+    top: 270px;
+    border: 1px solid black;
+    font-size: 200%;
+    background-color: #1C3C59;
+    color: orange;
+    border-radius: 10px;
+    margin-right: 661.5px;
+    padding: 0 30px 10px;
+    animation-name: example8;
+    animation-duration: 100s;
+    animation-delay: 0s
+}
+
+.text-container h1 {
+    font-size: 160%;
+}
+
+/* 1 DEL LOGO */
+
+@keyframes example0 {
+  0%   {background-color:; left:-5px; top:-130px;transform: translateZ(-250px) rotateZ(-30deg);}
+  12%  {background-color:; left:-5px; top:-130px;transform: translateZ(-250px) rotateZ(-120deg);}
+  90%  {background-color:; left:147px; top:0px;}
+}
+
+/* B */
+@keyframes example1 {
+  0%   {background-color:; left:264px; top:268px;}
+  5%  {background-color:; left:264px; top:500px;}
+  10%  {background-color:; left:900px; top:500px;}
+  85%  {background-color:; left:900px; top:268px;}
+  90% {background-color:; left:900px; top:0px;}
+  95% {background-color:; left:264px; top:0px;}
+  100% {background-color:; left:264px; top:268px;}
+}
+
+/* O */
+@keyframes example2 {
+  0%   {background-color:; left:262px; top:268px;}
+  5%   {background-color:; left:262px; top:268px;}
+  9% {left: -110px; top: -250px; transform: translateZ(-300px) rotate3d(1, 1, 1, 720deg);}
+  13% {left: -230px; top: -250px; transform: translateZ(-300px) rotate3d(0,0,0, 0deg);}
+  75% {left:130px; top: 268px;}
+  82% {left:130px; top: 268px;}
+  95% {left:262px; top: 268px;}
+  /* 5%  {background-color:; left:135px; top:268px;}
+  99%  {background-color:; left:135px; top:268px;} */
+  /* 10%  {background-color:; left:820px; top: 400px;}
+  85%  {background-color:; left:820px; top:268px;}
+  90% {background-color:; left:820px; top:120px;}
+  95% {background-color:; left:262px; top:120px;}
+  100% {background-color:; left:262px; top:268px;} */
+}
+
+/* O */
+@keyframes example3 {
+  0%   {background-color:none; left:261px; top:268px;}
+  5%   {background-color:none; left:7px; top:268px;}
+  85%  {background-color:none; left:7px; top:268px;}
+  99%  {left: 261px; top:268px;}
+  /* 20%  {background-color:none; left:-220px; top:268px; transform: rotatez(360deg) translateZ(-300px);}
+  85%  {background-color:none; left:-220px; top:268px; transform: rotatez(1800deg) translateZ(-300px);}
+  100% {background-color:none; left:261px; top:268px;} */
+}
+
+/* L */
+@keyframes example4 {
+  0%   {background-color:; left:196.5px; top:268px;}
+  25%  {background-color:; left:280px; top:268px;}
+  90%  {background-color:; left:280px; top:268px;}
+  /* 50%  {background-color:; left:196.5px; top:268px;}
+  75%  {background-color:; left:196.5px; top:268px;} */
+  100% {background-color:; left:196.5px; top:268px;}
+}
+
+/* E */
+@keyframes example5 {
+    0%   {background-color:; left:188px; top:268px;}
+    5%  {background-color:; left:188px; top:500px;}
+    10%  {background-color:; left:-7px; top:500px;}
+    85%  {background-color:; left:-7px; top:268px;}
+    90% {background-color:; left:-7px; top:120px;}
+    95% {background-color:; left:188px; top:120px;}
+    100% {background-color:; left:188px; top:268px;}
+}
+
+/* A */
+@keyframes example6 {
+  0%   {background-color:; left:176px; top:268px;}
+  5%  {background-color:; left:135px; top:268px;}
+  90%  {background-color:; left:135px; top:268px;}
+  /* 85%  {background-color:; left:-258px; top:268px;}
+  90% {background-color:; left:-258px; top:400px;}
+  95% {background-color:; left:176px; top:400px;}
+  100% {background-color:; left:176px; top:268px;} */
+}
+
+/* N */
+@keyframes example7 {
+  0%   {background-color:; left:195px; top:268px;}
+  5%  {background-color:; left:195px; top:0px;}
+  10%  {background-color:; left:-367px; top:0px;}
+  85%  {background-color:; left:-367px; top:268px;}
+  90% {background-color:; left:-367px; top:500px;}
+  95% {background-color:; left:195px; top:500px;}
+  100% {background-color:; left:195px; top:268px;}
+}
+
+/* TEXT-CONTAINER 57.4 with 700*/
+@keyframes example8 {
+  0%   {transform: rotateY(60.85deg);
+transition: ease 0.5s;}
+  9%  {transform: rotateY(60.85deg);
+transition: ease 0.5s;
+  }
+  10% {transform: rotateY(0deg);
+      transition: ease 0.1s;}
+  12% {transform: rotateY(60.85deg);
+transition: ease 0.1s;}
+  100% {transform: rotateY(60.85deg);
+transition: ease 0.5s;}
+}
